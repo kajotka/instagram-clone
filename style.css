@@ -14,25 +14,47 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+img {
+    cursor: pointer;
+}
+
 .nav-left {
     position: fixed;
     width: 335px;
     height: 100vh;
-    margin-left: 20px;
+    padding-left: 20px;
     border-right: 1px solid rgb(219, 219, 219);
     padding-top: 43px;
 }
+
 .app {
     width: 100%-335px;
     margin-left: 335px;
 }
 
-.avatars img, .avatar {
+.main {
+    width: 630px;
+    margin-right: 64px;
+}
+
+.avatars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatars img,
+.avatar {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    /* border: 2px solid rgb(223, 34, 122); */
 }
+
+.avatars img {
+    border: 2px solid rgb(223, 34, 122);
+    padding: 1px;
+
+}
+  
 
 .center {
     display: flex;
@@ -72,6 +94,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
+    cursor: pointer;
 }
 
 .nick {
@@ -87,6 +110,11 @@ body {
     font-size: 12px;
     line-height: 16px;
     font-weight: 600;
+}
+
+.link-blue:hover {
+    color: rgb(0, 55, 107);
+
 }
 
 .space-between {
@@ -113,12 +141,40 @@ body {
     margin-top: 8px;
 }
 
-.recommended-container .avatar {
+.recommended-container .avatar, .nav-left .avatar {
     width: 32px;
     height: 32px;
+}
+
+.nav-left .avatar {
+    margin-right: 0;
 }
 
 .recommended-container .nick {
     font-size: 12px;
 }
 
+footer {
+    margin-top: 20px;
+}
+
+.link-white {
+    color: rgb(199, 199, 199);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.link-white::after {
+    content: '\00B7';
+    margin: 0 0.25em 0 0.25em;
+}
+
+.link-white:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin-top: 16px;
+}
