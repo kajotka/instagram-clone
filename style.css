@@ -11,7 +11,7 @@
 
 body {
     /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -22,17 +22,28 @@ img {
     position: fixed;
     width: 335px;
     height: 100vh;
-    padding-left: 20px;
+    padding-left: 27px;
     border-right: 1px solid rgb(219, 219, 219);
     padding-top: 43px;
+}
+
+.nav-left img {
+    width: 24px;
+    height: 24px;
 }
 
 .menu {
 
 }
 
+.logo-instagram {
+    height: 32px;
+    padding-bottom: 16px;
+    margin-bottom: 35px;
+}
+
 .nav-item {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
     color: var(--color-black);
     font-size: 16px;
     font-weight: 400;
@@ -45,8 +56,13 @@ img {
     height: 30px;
 }
 
+.nav-left svg, .nav-left .avatar {
+margin-right: 16px;
+}
 .nav-end {
-    margin-top: 420px;
+    margin-top: 340px;
+    display: flex;
+    align-items: center;
 }
 .app {
     width: 100%-335px;
@@ -76,6 +92,13 @@ img {
     width: 62px;
     height: 62px;
 }
+
+.avatars p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
   
 
 .center {
@@ -85,7 +108,7 @@ img {
 
 .app {
     display: flex;
-    width: 949px;
+    /* width: 949px; */
     justify-content: space-between;
     padding-top: 43px;
 
@@ -93,6 +116,7 @@ img {
 
 .nav-right {
     width: 319px;
+    margin-top: 5px;
 }
 
 .nav-top {
@@ -163,14 +187,11 @@ img {
     margin-top: 8px;
 }
 
-.recommended-container .avatar, .nav-left .avatar {
+.recommended-container .avatar {
     width: 32px;
     height: 32px;
 }
 
-.nav-left .avatar {
-    margin-right: 0;
-}
 
 .recommended-container .nick {
     font-size: 12px;
