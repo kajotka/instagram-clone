@@ -11,7 +11,7 @@
 
 body {
     /* font-family: 'Roboto', sans-serif; */
-    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -32,9 +32,7 @@ img {
     height: 24px;
 }
 
-.menu {
-
-}
+.menu {}
 
 .logo-instagram {
     height: 32px;
@@ -56,14 +54,17 @@ img {
     height: 30px;
 }
 
-.nav-left svg, .nav-left .avatar {
-margin-right: 16px;
+.nav-left svg,
+.nav-left .avatar {
+    margin-right: 16px;
 }
+
 .nav-end {
     margin-top: 340px;
     display: flex;
     align-items: center;
 }
+
 .app {
     width: 100%-335px;
     margin-left: 335px;
@@ -99,7 +100,7 @@ margin-right: 16px;
     font-weight: 400;
     line-height: 16px;
 }
-  
+
 
 .center {
     display: flex;
@@ -146,7 +147,6 @@ margin-right: 16px;
 .nick {
     color: var(--color-gray);
     font-size: 14px;
-    font-weight: 400;
     line-height: 18px;
 }
 
@@ -187,7 +187,8 @@ margin-right: 16px;
     margin-top: 8px;
 }
 
-.recommended-container .avatar {
+.recommended-container .avatar,
+.posts .avatar {
     width: 32px;
     height: 32px;
 }
@@ -230,4 +231,97 @@ footer p {
     line-height: 16px;
     color: var(--color-black);
     padding-top: 4px;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.post {
+    margin-top: 48px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding-bottom: 20px;
+}
+
+.post-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.post-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.post-picture {
+    width: 100%;
+    margin-top: 16px;
+    cursor: default;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.icon-left svg {
+    margin-right: 8px;
+}
+
+.post h1,
+.post a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-top: 14px;
+}
+
+.post a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+.post span {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+textarea {
+    width: 100%;
+    border: 0;
+    resize: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    margin-top: 8px;
+    font-size: 14px !important;
+    line-height: 18px;
+    font: inherit;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.icons svg:hover {
+    color: var(--color-gray);
 }
